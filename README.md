@@ -1,1 +1,202 @@
-# Arthweb
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café & Comshop</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f3efe9;
+    scroll-behavior: smooth;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    background: #4b2e2e;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+
+  .nav-links a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #4b2e2e, #8b5e3c);
+    color: white;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /* SECTION */
+  .section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 26px;
+    color: #4b2e2e;
+    margin-bottom: 10px;
+  }
+
+  .line {
+    height: 4px;
+    background: #8b5e3c;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+
+  /* CARD */
+  .card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    position: relative;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    bottom: 15px;
+    width: 5px;
+    background: #8b5e3c;
+    border-radius: 10px;
+  }
+
+  .service-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4b2e2e;
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  .desc {
+    font-size: 14px;
+    color: #555;
+    padding-left: 10px;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: #4b2e2e;
+    color: white;
+    margin-top: 40px;
+  }
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div><b>☕ CaféByte</b></div>
+  <div class="nav-links">
+    <a href="#cafe">Café</a>
+    <a href="#comshop">Comshop</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Relax, Sip & Play</h1>
+  <p>Coffee + Gaming + Productivity in one place</p>
+</div>
+
+<!-- CAFÉ MENU -->
+<div class="section" id="cafe">
+  <div class="title">Café Menu</div>
+  <div class="line"></div>
+
+  <div class="card">
+    <div class="service-title">Hot Coffee</div>
+    <div class="desc">Freshly brewed, rich and smooth flavor.</div>
+  </div>
+
+  <div class="card">
+    <div class="service-title">Iced Coffee</div>
+    <div class="desc">Chilled coffee perfect for relaxing sessions.</div>
+  </div>
+
+  <div class="card">
+    <div class="service-title">Snacks</div>
+    <div class="desc">Light bites while you work or play.</div>
+  </div>
+</div>
+
+<!-- COMSHOP -->
+<div class="section" id="comshop">
+  <div class="title">Computer Services</div>
+  <div class="line"></div>
+
+  <div class="card">
+    <div class="service-title">Gaming Stations</div>
+    <div class="desc">Play your favorite games with smooth performance.</div>
+  </div>
+
+  <div class="card">
+    <div class="service-title">Internet Browsing</div>
+    <div class="desc">Fast and reliable connection for work or school.</div>
+  </div>
+
+  <div class="card">
+    <div class="service-title">Printing & Typing</div>
+    <div class="desc">Documents, school work, and quick printing.</div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+  <div class="title">Contact</div>
+  <div class="line"></div>
+
+  <div class="desc" style="text-align:center;">
+    📍 Your Location<br>
+    📱 Message us anytime<br>
+    ⏰ Open daily
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 CaféByte
+</div>
+
+</body>
+</html>
